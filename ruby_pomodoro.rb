@@ -31,3 +31,4 @@ while(true) do
   `notify-send --expire-time=#{1000 * 60 * 60 * 60} -u critical 'Break is over. Press any key to continue. #{Time.now.strftime("%Y/%m/%d %H:%M:%S")}'`
   STDIN.gets.chomp
 end
+
