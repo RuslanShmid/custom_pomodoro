@@ -1,2 +1,2 @@
-Start 'run' script with parameters (work_time, short_brake, long_brake)
+Start 'ruby ruby_pomodoro.rb' script with parameters (work_time, short_brake, long_brake)
 
