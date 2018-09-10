@@ -10,12 +10,10 @@ long_brake_seconds  = ARGV[2] ? ARGV[2].to_i * 60 : 15 * 60
 short_brakes_used = 0
 
 def time_count_down(seconds, urgency, message)
-  puts "Work started #{Time.now}"
   seconds.downto(0) do |seconds|
     `notify-send --expire-time=1010 -u #{urgency} ' #{message} #{Time.at(seconds).utc.strftime("%H:%M:%S")}'`
     sleep 1
   end
-  puts "Work ended #{Time.now}"
 end
 
 while(true) do
